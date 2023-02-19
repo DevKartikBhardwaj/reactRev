@@ -1,13 +1,26 @@
-import Product from "./Product";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+
 export default function Home() {
-    const arr = [1, 2, 3, 4];
+    const { count } = useSelector(state => state.first)
+    console.log(count);
+    const dispatch = useDispatch();
+    const handlerAdd = () => {
+        dispatch({
+            type: "increment"
+        })
+    }
+    const handlerSub = () => {
+        dispatch({
+            type: "decrement"
+        })
+    }
+
     return (
         <div>
-            {
-                arr.map((i) => {
-                    return <Product value={i} key={i} />;
-                })
-            }
+            <button onClick={handlerAdd}>+</button>
+            {count}
+            <button onClick={handlerSub}>-</button>
         </div>
     );
 }

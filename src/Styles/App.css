@@ -3,3 +3,34 @@
     padding: 0%;
 
 }
+
+/* .container {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.loader {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader>div {
+    height: 90px;
+    width: 90px;
+    border-bottom: 4px solid purple;
+    border-radius: 50%;
+    animation: rotation 0.5s infinite ease-in;
+
+}
+
+@keyframes rotation {
+    to {
+        transform: rotateZ(360deg);
+    }
+} */
